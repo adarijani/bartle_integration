@@ -8,49 +8,38 @@
 \preface
 
 %% Please write your preface here
-Functions of bounded variation ($\mathbf{BV}$ functions in the sequel) have had an important role in several classical problems of the
-calculus of variations, for instance in the theory of graphs with minimal area. More recently, this class of functions has been the natural
-tool to study several problems characterized by the appearance of discontinuity hypersurfaces; examples come from image segmentation theory 
-and fracture mechanics. The analysis of these problems require a knowledge of some of the basic concepts of geometric measure theory, such 
-as Hausdorff measures and rectifiable sets.\\
-One of the motivations which led us to write this book is the desire to provide a systematic and self-contained presentation of the theory 
-of functions of bounded variation and, at the same time, an elementary introduction to geometric measure theory. In fact, after the classical 
-treatises of V. G. Mazj'a \cite{Maz_ja_1985}, A. I. Vol'pert and S. I. Hudjaev \cite{Volpert1985AnalysisIC} and H. Federer \cite{Federer_1996} 
-(in the latter $\mathbf{BV}$ functions are presented in the more general framework of the currents), some aspects of the theory of $\mathbf{BV}$ 
-functions have been treated in the monographs of E. Giusti \cite{Giusti_1984}, U. Massari and M.Miranda \cite{208}, W. Ziemer \cite{278}, 
-L.C. Evans and R. F. Gariepy \cite{145}, M.Giaquinta, G. Modica and J. Soucek \cite{173}, but the analysis of fine properties of $\mathbf{BV}$ 
-functions and the development of general variational problems in $\mathbf{BV}$ is not the central goal of any of these monographs. The first 
-half of our book is, instead, explicitly devoted to the theory of $\mathbf{BV}$ functions, from classical results up to the developments 
-of the last ten years.\\
-\indent Our starting point is, in Chapter 1, abstract measure theory. We assume the reader has an elementary knowledge of the subject, and 
-we emphasize some aspects perhaps less widely known, but fundamental for the development of the book, such as weak convergence in spaces 
-of measures, outer measures and Caratheodory construction.\\
-In the second chapter we introduce all the basic ingredients of geometric measure theory, such as Hausdorff measures $\mathcal{H}^k$, 
-covering theorems, rectifiable sets, area and coarea formulae, Minkowski content. Moreover, the chapter contains a brief treatment of Young 
-measures and of the continuity and semicontinuity properties of functionals defined on measures. The aim is to give a quite general 
-presentation, without restricting e.g. to the case of hypersurfaces, which is the only one relevant for the development of the $\mathbf{BV}$ 
-theory. In our treatment of geometric measure theory a fundamental role is played by Lipschitz functions: indeed, these functions are more 
-flexible than $\mathit{C}^1$ functions with respect, for instance, to truncation and extension and, by the classical Rademacher theorem,
-they are almost everywhere differentiable. Hence, as shown by H. Federer in \cite{152}, the canonical liberalization techniques 
-can be adapted to this context. In particular , we develop the whole theory without using the link between Lipschitz and $\mathit{C}^1$ 
-functions provided by the Whitney extension theorem. Another feature of the chapter and of the subsequent one is the emphasis on the 
-so-called blow-up technique, which is used both for the study of the local properties of rectifiable sets and for the fine theory of $\mathbf{BV}$ 
-functions. In this respect, a unifying concept is that if tangent measure, introduced (adapting with minor variants the original definition of
-D. Preiss in \cite{242}) in Section ~\ref{section 2.7}  
+\indent This book consists of two separate, but closely related, parts. The first part (Chapters $1-10$) is subtitled 
+\textit{The Elements of Integration;} the second part (Chapters $11-17$) is subtitled \textit{The Elements of Lebesgue measure.} 
+It is possible to read these two parts in either order, with only a bit of repetition.\\
+\indent The Elements of Integration is essentially a corrected reprint of a book with that title, originally published in 1966, 
+designed to present the chief results of the Lebesgue theory of integration to a reader having only a modest mathematical background. 
+This book developed from my lectures at the University of Illinois, Urbana-Champaign, and it was subsequently used there and elsewhere 
+with considerable success. Its only prerequisites are a understanding of elementary real analysis and the ability to comprehend ``$\varepsilon - \delta$ 
+arguments''. We suppose that the reader has some familiarity with the Riemann integral so that it is not necessary to provide 
+motivation and detailed discussion, but we do not assume that the reader has a mastery of the subtleties of that theory. A solid 
+course in ``advanced calculus'', an understanding of the first third of my book \textit{The Elements of Real Analysis,} or of most 
+of my book \textit{Introduction to Real Analysis} with D. R. Sherbert provides an adequate background. In preparing this new edition, 
+I have seized the opportunity to correct certain errors, but I have resisted the temptation to insert additional material, since I 
+believe that one of the features of this book that is most appreciated is its brevity.\\
+\noindent \textit{The Elements of Lebesgue Measure} is descended from class notes written to acquaint the reader with the theory 
+of Lebesgue measure in the space $\textbf{R}^p$. While it is easy to find good treatments of the case $p=1$, the case $p>1$ is not 
+quite as simple and is much less frequently discussed. The main ideas of Lebesgue measure are presented in detail in Chapters $10-15$, 
+although some relatively easy remarks are left to the reader as exercises. The final two chapters venture into the topic of 
+nonmeasurable sets and round out the subject.\\
+\indent There are many expositions of the Lebesgue integral from various points of view, but I believe that the abstract measure 
+space approach used here strikes directly towards the most important results: the convergence theorems. Further, this approach is 
+particularly well-suited for students of probability and statistics, as well as students of analysis. Since the book is intended as 
+an introduction, I do not follow all of the avenues that are encountered. However, I take pains not to attain brevity by leaving out 
+important details, or assigning them to the reader.\\
+\indent Readers who complete this book are certainly not through, but if this book helps to speed them on their way, it has accomplished 
+its purpose. In the References, I give some books that I believe readers can profitably explore, as well as works cited in the body of the text.\\
+\indent I am indebted to a number of colleagues, past and present, for their comments and suggestions; 
+I particularly wish to mention N. T. Hamilton, G. H. Orland, C. W. Mullins, A. L. Peressini, and J. J. Uhl, Jr. I also wish to thank 
+Professor Roy O. Davies of Leicester University for pointing out a number of errors and possible improvements.\\
 
 
-\begin{equation}
-  J(\Gamma, u)\coloneqq \int_{R\backslash \Gamma}^{}\|\nabla u\|^2 +\alpha\|u-g\|^2 dx + \beta \mathcal{H}^{N-1} (R\cap \Gamma)
-\end{equation}
+\begin{flushright}\noindent
 
-
-
-\vspace{\baselineskip}
-
-\noindent \textit{Pisa} \hfill L. A.\\
-\textit{Florence} \hfill N. F.\\
-\textit{Lecce} \hfill D. P.\\
-June 1999\\
-% \begin{flushright}\noindent
-% Berlin, \today \hfill {\it Ali Darijani}\\
-% \end{flushright}
+  \hfill {\bf ROBERT G. BARTLE}\\
+\end{flushright}
+\textit{Ypsilanti and Urbana} \\ \textit{Novenber 20, 1994}\\
